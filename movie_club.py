@@ -133,7 +133,7 @@ def initialize(weeks):
 
 if __name__ == "__main__":
 
-	INITIT = 0 #0 for pickle 1 for soup
+	INITIT = 1 #0 for pickle 1 for soup
 	weeks = [(20,13),(2,21),(7,15),(32,12),(25,17),(38,23),(34,16),(14,27),(41,8),(6,40),(42,19)] #update weekly
 	curr_week = len(weeks) + 1
 	# 	when updates to list are made or weeks ^ updates - run initialize
