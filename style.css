@@ -30,6 +30,12 @@ pre {
   overflow-x: scroll;
 }
 
+.boyj-logo img {
+    width: 50%;
+    margin-top: -6%;
+    margin-left: 25%;
+}
+
 /* https://gist.github.com/stereokai/7666bfe93929b14c2dced148c79e0e97 */
 /* .sin {
   --sin-term1: var(--angle);
@@ -110,17 +116,17 @@ pre {
     border-style: double;
     border-color: black;
     border-width: 5px;
-    margin-right: 55%;
-    margin-top: 99.99999px;
+    margin-right: 25%;
+    margin-top: 20px;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
 
-    margin-left: 69%;
+    /* margin-left: 69%; */
     margin-right: 69.420px;
-    margin-top: 42.069px;
+    margin-top: 24px;
 }
 
 #license {
