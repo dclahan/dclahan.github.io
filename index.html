@@ -2,27 +2,18 @@
 <html>
 
 <head>
-    <title>boyjones' website</title>
+    <title>Boy Jones</title>
     <meta name="author" content="dolan">
     <meta name="description" content="Boy Jones's website">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
-
-    
 </head>
 
 <body>
     <header>
-    <br>
     <div class="boyj-logo">
-        <h3>
-            ██████╗░░█████╗░██╗░░░██╗░░░░░██╗░█████╗░███╗░░██╗███████╗░██████╗
-            ██╔══██╗██╔══██╗╚██╗░██╔╝░░░░░██║██╔══██╗████╗░██║██╔════╝██╔════╝
-            ██████╦╝██║░░██║░╚████╔╝░░░░░░██║██║░░██║██╔██╗██║█████╗░░╚█████╗░
-            ██╔══██╗██║░░██║░░╚██╔╝░░██╗░░██║██║░░██║██║╚████║██╔══╝░░░╚═══██╗
-            ██████╦╝╚█████╔╝░░░██║░░░╚█████╔╝╚█████╔╝██║░╚███║███████╗██████╔╝
-            ╚═════╝░░╚════╝░░░░╚═╝░░░░╚════╝░░╚════╝░╚═╝░░╚══╝╚══════╝╚═════╝░</h3>
+        <img alt="band logo" src="/img/logo.PNG"/>
     </div>
     <br>
     <div id="scroll-container">
@@ -34,73 +25,44 @@
 
 <main>
     <div id="headerinfo">
-        <h1>boyjones' website</h1>
+        <h1>Boy Jones's website</h1>
         <p title="in case you hadn't noticed yet">  > we r a band</p>
         <div style="display: flex; flex-direction: row">
             <p> > our members are</p>
-            <img style="margin-left: 1rem" src="/img/bandphoto.jpg" alt="bandmebers">
+            <img style="margin-left: 1rem; width: 40%; " src="/img/bandphoto.jpg" alt="pretty cool cats">
         </div>
         <br>
 
         <p style="font-size: 80%" title="message for the fans">
-          this page is still a work in progress, you might find links that lead nowhere or pages that look bad. it's also not been made for mobile at all, like i haven't even checked how it looks on mobile. 
-        </p>
-
-        <p>
-          yea idk what's going on here
+          We like to play music and we love our fans 🥰🥰🥰🧡🧡🧡💙💙
         </p>
     </div>
     
 
-    <div class="contact broider-1">
-      <img alt="links" src="/img/coollink.gif" style="width: 12rem;" title="uhhh some stuff about me" />
-      <br/>
-
-      <a href="/email"><img alt="email" src="/images/email.gif"/>~~book us~~</a>
-
-      <a href="/" style="text-decoration: none">link</a>
-      <a href="/" style="text-decoration: none">another link</a>
-      <a href="/" target="_blank" style="text-decoration: dotted">music link?</a>
-      <a href="/" style="text-decoration: none">birds</a>
-    </div>
-
-    <div style="display: flex; flex-direction: row; padding: 3rem; justify-content: space-evenly; margin-top: 3rem">
-      <div>
-        <h2><i>post about stuff here</i></h2>
-
-        <ul style="margin-left: 1.2rem;">
-          
-          
-          <li><a href="/">upcoming show 1</a></li>
-          
-          <li><a href="/">upcoming show 2</a></li>
-          
-          <li><a href="/">upcoming show 3</a></li>
-          
-          <li><a href="/">new music ?</a></li>
+    
+      <div class="link-section">
+        <h1><i>UPCOMING</i></h1>
+        
+        <ul style="margin-left: 1.2rem;" class="link-list">
           
           <li><a href="/">hell yes brother</a></li>
           
         </ul>
-
-        and <a href="/">more!</a>
+        
       </div>
-      <div>
-        <h2><b>sections</b></h2>
 
-        <a href="/" style="text-decoration: dotted">art</a>
-        <p style="margin-top: 0">
-          spotify? I could prbably embed spotify and/or insta
-        </p>
-        <br/>
+    <div class="contact broider-1">
+      <img alt="links" src="/img/coollink.gif" style="width: 12rem;" />
+      <br/>
 
-        <a href="/" style="text-decoration: dotted">section 2</a>
-        <p style="margin-top: 0">
-          another section! hell yeah
-        </p>
-        <br/>
-      </div>
+      <a href="/email.html">~~book us~~</a>
+
+      <a href="https://www.instagram.com/boyjonesofficial/" style="text-decoration: none">insta</a>
+      <a href="https://www.tiktok.com/@boyjonesband" style="text-decoration: none">tok</a>
+      <a href="https://open.spotify.com/user/gfchiloiro?si=355a7b6adecb4366" target="_blank" style="text-decoration: dotted">green music app</a>
+      <a href="/" style="text-decoration: none">iphone music app</a>
     </div>
+
 </main>
 
 
@@ -137,11 +99,12 @@
     
     <script>
       const id = Math.floor(Math.random() * 11) + 1;
-      document.body.style = `cursor: url('img/cursors/Normal-Select.cur'), auto;`;
 
       document.getElementById('random-number').innerHTML = Math.floor(Math.random() * 3000) + 2431;
     </script>
-    <script type="text/javascript" src="/js/cursor-effects.js"></script>
+    <script type="module" src="js/firestore.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/cursor-effects.js"></script>
     <script src="js/oneko.js"></script>
 
 </body>
