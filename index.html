@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="dolan">
+    <meta name="description" content="Assassins website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>PS Assassins</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="password-div">
+            <h4>Enter your password</h4><br />
+            <form id="pform">
+                <div class="input-field">
+                    <!-- <label for="pword">Password:</label> -->
+                    <input type="text" id="pword" name="pword" class="pword"><br><br>
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+            </form>
+        </div>
+
+        <div class="instructions" id="Instructions">
+            <h3>Hello User...</h3>
+            <button id="Show" value="Click to show" onclick=" 
+            document.getElementById('Show').style.display='none'; 
+            document.getElementById('Hide').style.display='block'; 
+            document.getElementById('Task').style.display='block'">Click to reveal task</button>
+            <button id="Hide" value="Click to hide" style="display:none;" onclick=" 
+            document.getElementById('Show').style.display='block'; 
+            document.getElementById('Hide').style.display='none'; 
+            document.getElementById('Task').style.display='none'">Click to hide</button>
+            <br>
+            <div id="Task" class="Task" style="display:none">Task</div>
+            
+            <p>Once you have accomplished your task, have your target tell you their password.</p>
+            <br>
+            <br>
+            <button id="Hard" value="Too Hard?" style="display:block;" onclick=" 
+                    document.getElementById('Hard').style.display='none'">
+                Too Hard?
+            </button>
+            <br>
+        </div>
+
+        <script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.10/seedrandom.min.js>
+        </script>
+        <script src="script.js"></script>
+    </main>
+    <footer></footer>
+</body>

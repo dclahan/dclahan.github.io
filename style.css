@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#E6EFE9;
+    --secondary-color:#1C0221;
+    --third-color:#C5F4E0;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.password-div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+}
+
+.submit {
+    font-size: 1.2rem;
+    border: 2px solid var(--secondary-color);
+    background: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #1c440b;
+    color: white;
+}
+
+.pword {
+    font-size: 2rem;
+}
+
+.input-field {
+    display: grid;
+}
+
+button {
+    font-size: 1.2rem;
+    border: 2px solid var(--secondary-color);
+    background: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1c440b;
+    color: white;
+}
+
+.Task {
+    font-size: 2rem;
+}
+
+
+.instructions {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    margin-top: -50px;
+    /* margin-left: -200px; */
+    /* width: 300px; */
+    height: 100px;
+    display: none;
+}
