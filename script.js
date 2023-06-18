@@ -205,7 +205,7 @@ pform.addEventListener('submit', (e) => {
 // console.log(Math.random());          // Always 0.3752569768646784
 
 
-// event listener for the oo hard button
+// event listener for the too hard button
 
 // randomize every time (but same seed so same results)
 // Randomize list of names,
@@ -249,7 +249,7 @@ const setupUI = (pword) => {
         shuffleArray(Players, player_seed);
         shuffleArray(Passwords, password_seed);
         let index = Passwords.indexOf(pword);
-        shuffleArray(Tasks, TOY_Passwords[index]);
+        shuffleArray(Tasks, Passwords[index]);
         shuffleArray(Places, Tasks[index]);
         const playername = Players[index];
         // console.log(playername);
@@ -257,7 +257,9 @@ const setupUI = (pword) => {
         const target = Players[(index+1) % Players.length];
         const task = Tasks[0];
         const place = Places[0];
-
+        const placestr = "in " + place;
+        Math.seedrandom(placestr);
+        const usePlace = Math.random() < .4;
         instructions.innerHTML = `
             <h3>Hello ${playername} or their assassin</h3>
             <button id="Show" value="Click to show" onclick=" 
@@ -269,7 +271,7 @@ const setupUI = (pword) => {
             document.getElementById('Hide').style.display='none'; 
             document.getElementById('Task').style.display='none'">Click to hide</button>
             <br>
-            <div id="Task" class="Task" style="display:none">You must get ${target} to ${task} in ${place}</div>
+            <div id="Task" class="Task" style="display:none">You must get ${target} to ${task} ${usePlace ? placestr : ""}</div>
             
             <p>Once you have accomplished your task, have your target tell you their password.</p>
         `;
