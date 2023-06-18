@@ -38,6 +38,7 @@ body{
     background: none;
     padding: 5px 10px;
     cursor: pointer;
+    color: var(--secondary-color);
 }
 
 .submit:hover{
